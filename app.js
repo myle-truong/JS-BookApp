@@ -1,7 +1,7 @@
 document.body.style.backgroundImage = "url('/img/bookshelf.jpg')";
 
 // intial values
-//const API_KEY = "AIzaSyCur9bR6CxPRGi1gC2ZkE6tG-b4i4FlCuY";
+const API_KEY = "AIzaSyCur9bR6CxPRGi1gC2ZkE6tG-b4i4FlCuY";
 //AIzaSyCur9bR6CxPRGi1gC2ZkE6tG-b4i4FlCuY
 
 // seclect element from the DOM
@@ -12,7 +12,7 @@ const content = document.querySelector(".content");
 buttonElement.onclick = async function(event) {
     const value = inputElement.value;
 
-    const url = `https://www.googleapis.com/books/v1/volumes?q=${value}+inauthor:keyes&key=AIzaSyCur9bR6CxPRGi1gC2ZkE6tG-b4i4FlCuY`;
+    const url = `https://www.googleapis.com/books/v1/volumes?q=${value}+inauthor:keyes&key=${API_KEY}`;
 
     const response = await fetch(url);
     const data = await response.json();
