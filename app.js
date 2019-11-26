@@ -2,7 +2,6 @@ document.body.style.backgroundImage = "url('/img/bookshelf.jpg')";
 
 // intial values
 const API_KEY = "AIzaSyCur9bR6CxPRGi1gC2ZkE6tG-b4i4FlCuY";
-//AIzaSyCur9bR6CxPRGi1gC2ZkE6tG-b4i4FlCuY
 
 // seclect element from the DOM
 const buttonElement = document.querySelector("#search");
